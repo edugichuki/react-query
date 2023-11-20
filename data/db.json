@@ -1,0 +1,110 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Spider-Man",
+      "realName": "Peter Parker",
+      "power": "Web-slinging",
+      "archenemy": "Green Goblin"
+    },
+    {
+      "id": 2,
+      "name": "Iron Man",
+      "realName": "Tony Stark",
+      "power": "Powered armor suit",
+      "archenemy": "Mandarin"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "realName": "Diana Prince",
+      "power": "Super strength, Lasso of Truth",
+      "archenemy": "Ares"
+    },
+    {
+      "id": 4,
+      " name": "Black Panther",
+      "realName": "T'Challa",
+      "power": "Superhuman strength, Vibranium suit",
+      "archenemy": "Erik Killmonger"
+    },
+    {
+      "id": 5,
+      "name": "Captain America",
+      "realName": "Steve Rogers",
+      "power": "Superhuman strength, Shield",
+      "archenemy": "Red Skull"
+    },
+    {
+      "name": "Shazam",
+      "realName": "Billy Batson",
+      "id": 6
+    }
+  ],
+  "supervillains": [
+    {
+      "id": 1,
+      "name": "Joker",
+      "realName": "Unknown",
+      "power": "Cunning Intellect",
+      "archenemy": "Batman"
+    },
+    {
+      "id": 2,
+      "name": "Lex Luthor",
+      "realName": "Alexander Joseph Luthor",
+      "power": "Genius-level Intellect",
+      "archenemy": "Superman"
+    },
+    {
+      "id": 3,
+      "name": "Green Goblin",
+      "realName": "Norman Osborn",
+      "power": "Enhanced Strength, Glider",
+      "archenemy": "Spider-Man"
+    },
+    {
+      "id": 4,
+      "name": "Thanos",
+      "realName": "Thanos",
+      "power": "Superhuman Strength, Endurance",
+      "archenemy": "The Avengers"
+    },
+    {
+      "id": 5,
+      "name": "Harley Quinn",
+      "realName": "Harleen Frances Quinzel",
+      "power": "Acrobatics, Expert Combatant",
+      "archenemy": "Batman"
+    },
+    {
+      "id": 6,
+      "name": "Venom",
+      "realName": "Eddie Brock",
+      "power": "Symbiote Enhancements",
+      "archenemy": "Spider-Man"
+    },
+    {
+      "id": 7,
+      "name": "Darkseid",
+      "realName": "Uxas",
+      "power": "God-like Strength, Omega Beams",
+      "archenemy": "Justice League"
+    }
+  ],
+  "users": [
+    {
+      "id": "vishwash@example.com",
+      "userId": "vishwash@example.com"
+    }
+  ],
+  "channelId": [
+    {
+      "id": "codewarrior",
+      "stack": [
+        "MERN",
+        "MEAN"
+      ]
+    }
+  ]
+}
