@@ -1,13 +1,21 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
+import { request } from "../utils/axios-utils";
 
 const fetchSuperHeroes = async () => {
-  const response = await axios.get("http://localhost:4000/superheroes");
+  // const response = await axios.get("http://localhost:4000/superheroes");
+
+  const response = await request({ url: "/superheroes" });
   return response.data;
 };
 
-const addSuperHero = (hero) => {
-  const response = axios.post("http://localhost:4000/superheroes", hero);
+const addSuperHero = async (hero) => {
+  // const response = axios.post("http://localhost:4000/superheroes", hero);
+
+  const response = await request({
+    url: "/superheroes",
+    method: "post",
+    data: hero,
+  });
   const data = response.data;
   return data;
 };
