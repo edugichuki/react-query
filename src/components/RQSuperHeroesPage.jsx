@@ -44,7 +44,7 @@ const RQSuperHeroesPage = () => {
 
       {
         //? optional chaining to prevent jsx from throwing an error if data doesn't exist
-        data.map((hero) => {
+        data?.map((hero) => {
           return (
             <div key={hero.id}>
               <Link to={`${hero.id}`}>{hero.name}</Link>

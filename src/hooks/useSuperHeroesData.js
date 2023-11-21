@@ -22,6 +22,7 @@ export const useSuperHeroesData = () => {
     onError: (error) => {
       console.error("Error during data fetching:", error);
     },
+
     //? react-query-data-transformations using the select option
     // select: (data) => {
     //   const superHeroNames = data.map((hero) => hero.name);
@@ -32,8 +33,17 @@ export const useSuperHeroesData = () => {
 
 export const useAddSuperHeroData = () => {
   const queryClient = useQueryClient();
-  queryClient.invalidateQueries({ queryKey: ["superHeroes"] });
+
   return useMutation({
     mutationFn: addSuperHero,
+    onSuccess: (data) => {
+      queryClient.invalidateQueries({ queryKey: ["superHeroes"] });
+      // queryClient.setQueriesData(["superHeroes"], (oldQUeryData) => {
+      //   return {
+      //     ...oldQUeryData,
+      //     data: [...oldQUeryData.data, data.data],
+      //   };
+      // });
+    },
   });
 };
